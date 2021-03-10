@@ -10,6 +10,8 @@ body {
   color: #333;
   font-size: 1.1rem;
   font-family: 'Fira Sans', sans-serif;
+  position: relative;
+  min-height: 100vh; 
 }
 
 h1,
@@ -19,7 +21,7 @@ h4 {
   line-height: 1.3;
 }
 
-a {
+a { 
   color: rgb(98, 98, 98);
   text-decoration: none;
 }
@@ -44,7 +46,7 @@ img {
   padding-bottom: 0.3rem;
 }
 
-.navbar .container {
+.container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap:2rem;
@@ -97,7 +99,7 @@ img {
   padding: 0.8rem 1.5rem;
   border: none;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 30px;
 }
 
@@ -105,31 +107,6 @@ img {
   display: block;
   width: 100%;
   height:100%;
-}
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  grid-gap: 1rem;
-  
-}
-.card {
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  color: #5d5e5e;
-  
-}
-.thumbnail img {
-  fill: #c7c4c4;
-  height: 550px;
-  padding: 1.5rem;
-}
-.card-content {
-  font-size: .75rem;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
 }
 
 .section-b {
@@ -149,11 +126,11 @@ img {
 }
 
 .section-b .container h1{
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .section-b .container h3{
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .signup {
@@ -193,4 +170,50 @@ button:hover {
 
 input[type=text] {
   padding: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 1rem;
+  padding: 8rem;
+}
+.card {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #5d5e5e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.thumbnail img {
+  fill: #c7c4c4;
+  height: 500px;
+  padding: 1.5rem;
+}
+
+.card-content {
+  font-size: .75rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+.card-content h1 {
+ padding: 2rem;
+}
+
+.card-content p{
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
